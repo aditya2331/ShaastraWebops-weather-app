@@ -1,0 +1,124 @@
+.App {
+  background: linear-gradient(
+  180deg, 
+  #cacaca,
+  #364268
+   );
+  display:flex;
+  flex-direction: column;
+  min-height: 100vh;
+  
+}
+
+
+
+.App-header {
+  background: rgba(0,0,0,0);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  flex-direction: column;
+  align-items: center;
+  font-size: calc(7px + 2vmin);
+  color: rgb(255, 255, 255);
+  border-color: #000000;
+  padding-right: 60px;
+  display: flex;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+hr {
+  width: 100%;
+  background-color: #6e0b0b;
+}
+
+main {
+  flex-grow: 1;
+  text-align: center;
+
+  
+}
+footer {
+  padding: 2px;
+  min-height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: rgba(0,0,0,0.5);
+  color: rgb(180, 180, 180);
+  font-size: small;
+  text-align: center;
+}
+header {
+  padding-top: 5px;
+  padding-left: 15px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.current-weather {
+  font-size: larger;
+}
+
+input {
+  margin: 10px;
+  border-radius: 15px;
+  font-size: large;
+  padding: 8px;
+  border-color: rgba(0,0,0,0);
+}
+
+button {
+  border-radius: 15px;
+  font-size: large;
+  padding: 8px;
+  background-color: #e6e6e6;
+  border-color: rgba(0,0,0,0);
+}
+
+.weather-info {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-top: 70px;
+}
+
+.forecast-day {
+  background-color: #e6e6e6;
+  border-radius: 15px;
+  border-width: 5px;
+  border-color: black;
+  margin: 20px;
+  box-shadow: 5px 5px 6px #2b3036;
+}
+
+.forecast-current {
+  border-radius: 10px;
+  background-color: #e6e6e6;
+  padding: 15px;
+  border-color: black;
+  margin-left: 20px;
+  margin-right: 20px;
+  box-shadow: 5px 5px 6px #2b3036;
+}
+
+
+.date {
+  font-weight: 700;
+  width: 15%;
+  align-self: flex-end;
+  text-align: center;
+  background-color: rgb(40, 40, 40);
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.landing {
+  padding-top: 180px;
+}
+
+.landing-text {
+  font-size: 60px;
+}
