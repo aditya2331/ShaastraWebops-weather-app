@@ -128,15 +128,15 @@ const Forecast = ({curday}) => {
                                     <div className="grid-container">
                                         <div className="forecast-day">
                                         <img src={iconvert(forecastInfo.list[1])} alt="weather icon"></img>
-                                        <p>{dayconvert(curday + 1)}: {Math.round(cToF(forecastInfo.list[1].temp.day))}°F and {forecastInfo.list[1].weather[0].description}.</p>
+                                        <p>{dayconvert((curday + 1)%7)}: {Math.round(cToF(forecastInfo.list[1].temp.day))}°F and {forecastInfo.list[1].weather[0].description}.</p>
                                         </div>
                                         <div className="forecast-day">
                                             <img src={iconvert(forecastInfo.list[2])} alt="weather icon"></img>
-                                            <p>{dayconvert(curday + 2)}: {Math.round(cToF(forecastInfo.list[2].temp.day))}°F and {forecastInfo.list[2].weather[0].description}.</p>
+                                            <p>{dayconvert((curday + 2)%7)}: {Math.round(cToF(forecastInfo.list[2].temp.day))}°F and {forecastInfo.list[2].weather[0].description}.</p>
                                         </div>
                                         <div className="forecast-day">
                                             <img src={iconvert(forecastInfo.list[3])} alt="weather icon"></img>
-                                            <p>{dayconvert(curday + 3)}: {Math.round(cToF(forecastInfo.list[3].temp.day))}°F and {forecastInfo.list[3].weather[0].description}.</p>
+                                            <p>{dayconvert((curday + 3)%7)}: {Math.round(cToF(forecastInfo.list[3].temp.day))}°F and {forecastInfo.list[3].weather[0].description}.</p>
                                         </div>
                                     </div>
                                 </div> :
@@ -149,15 +149,15 @@ const Forecast = ({curday}) => {
                                     <div className="grid-container">
                                         <div className="forecast-day">
                                         <img src={iconvert(forecastInfo.list[1])} alt="weather icon"></img>
-                                        <p>{dayconvert(curday + 1)}: {Math.round(forecastInfo.list[1].temp.day)}°C and {forecastInfo.list[1].weather[0].description}.</p>
+                                        <p>{dayconvert((curday + 1)%7)}: {Math.round(forecastInfo.list[1].temp.day)}°C and {forecastInfo.list[1].weather[0].description}.</p>
                                         </div>
                                         <div className="forecast-day">
                                             <img src={iconvert(forecastInfo.list[2])} alt="weather icon"></img>
-                                            <p>{dayconvert(curday + 2)}: {Math.round(forecastInfo.list[2].temp.day)}°C and {forecastInfo.list[2].weather[0].description}.</p>
+                                            <p>{dayconvert((curday + 2)%7)}: {Math.round(forecastInfo.list[2].temp.day)}°C and {forecastInfo.list[2].weather[0].description}.</p>
                                         </div>
                                         <div className="forecast-day">
                                             <img src={iconvert(forecastInfo.list[3])} alt="weather icon"></img>
-                                            <p>{dayconvert(curday + 3)}: {Math.round(forecastInfo.list[3].temp.day)}°C and {forecastInfo.list[3].weather[0].description}.</p>
+                                            <p>{dayconvert((curday + 3)%7)}: {Math.round(forecastInfo.list[3].temp.day)}°C and {forecastInfo.list[3].weather[0].description}.</p>
                                         </div>
                                     </div>
                                 </div>
